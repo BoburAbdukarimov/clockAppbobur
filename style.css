@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Bad Script', cursive; */
+ /* font-family: 'Poppins', sans-serif; */
+ font-family: 'Work Sans', sans-serif; 
+
+}
+.soat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url("./fonstola.ru_171143_1680x1050.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    color: white;
+}
+@keyframes ani {
+    0%, 100%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-20px);
+
+    }
+}
+.soat::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(255, 38, 0), rgb(255, 198, 10));
+    animation: ani 5s ease-in-out infinite;
+    animation-delay: -2.5s;
+
+}
+.soat::after{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(35, 255, 6), rgb(40, 2, 255));
+    animation: ani 5s ease-in-out infinite;
+    animation-delay: -2.5s;
+
+
+}
+span{
+    color: white;
+    font-size: 45px;
+  
+    font-weight: 700;
+   
+}
+.clock{
+    position: relative;
+    width: 700px;
+    height: 250px;
+    background: rgb(255,255,255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgb(255,255,255, 0.1);
+    backdrop-filter: blur(20px);
+}
+.soatt{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgb(255,255,255, 0.05);
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(255,255,255, 0.1);
+    margin: 0 10px;
+
+}
+.minutes{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgb(255,255,255, 0.05);
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(255,255,255, 0.1);
+    margin: 0 10px;
+}
+.secondes{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgb(255,255,255, 0.05);
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(255,255,255, 0.1);
+    margin: 0 10px;
+    color: rgb(231, 255, 20);
+
+}
+.Amm{
+    font-size: 24px;
+    margin-bottom: 40px;
+
+}
+@media (max-width: 425px){
+    .soat::after{
+        bottom: 10%;
+        left: 0;
+        width: 150px;
+        height: 150px;
+    }
+    .soat::before{
+        top: 10%;
+        right: 0;
+        width: 150px;
+        height: 150px;
+    }
+    .clock{
+        width: 400px;
+        height: 200px;
+    }
+    .soat{
+     
+        background: url("./fonstola.ru_171143_1680x1050.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        
+        color: white;
+    }
+}
