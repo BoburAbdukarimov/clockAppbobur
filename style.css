@@ -119,12 +119,14 @@ span{
         left: 0;
         width: 150px;
         height: 150px;
+        display: none;
     }
     .soat::before{
         top: 10%;
         right: 0;
         width: 150px;
         height: 150px;
+        display: none;
     }
     .clock{
         width: 400px;
